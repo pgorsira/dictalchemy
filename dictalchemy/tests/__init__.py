@@ -225,7 +225,7 @@ class WithHybrid(Base):
         return self._value
 
     @value.setter
-    def set_value(self, value):
+    def value(self, value):
         self._value = value
 
     def __init__(self, value):
@@ -245,7 +245,7 @@ class WithDefaultInclude(Base):
         return self.id
 
     @id_alias.setter
-    def set_id_alias(self, value):
+    def id_alias(self, value):
         self.id = value
 
     def __init__(self, id):

@@ -9,7 +9,7 @@ Contains :class:`DictableModel` that can be used as a base class for
 
 """
 
-from __future__ import absolute_import, division
+
 
 from dictalchemy import utils
 

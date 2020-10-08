@@ -1,5 +1,5 @@
 # vim: set fileencoding=utf-8 :
-from __future__ import absolute_import, division
+
 
 from dictalchemy import DictableModel
 from dictalchemy.utils import arg_to_dict
@@ -329,7 +329,7 @@ class AsHalMixin(object):
 
         follow = arg_to_dict(kwargs.get('follow', None))
         _embedded = {}
-        for (k, args) in follow.iteritems():
+        for (k, args) in follow.items():
             if args.get('_embedded', None) and k in result:
                 _embedded[k] = result.pop(k)
 

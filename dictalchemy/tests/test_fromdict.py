@@ -1,5 +1,5 @@
 # vim: set fileencoding=utf-8 :
-from __future__ import absolute_import, division
+
 
 from dictalchemy import (
     DictalchemyError,
@@ -58,7 +58,7 @@ class TestFromdict(TestCase):
         try:
             named.fromdict(new)
             assert False
-        except Exception, e:
+        except Exception as e:
             assert True, str(e)
 
     def test_one_to_many_plain(self):
